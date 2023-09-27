@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link href="\style\index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <h1><%= todaysday %></h1>
+    <div class="todo_app">
+        <h2>TODAYS TASKS</h2>
+            <ul>
+                <% for(var i=0;i<allitems.length;i++){ %>
+                    <li class="row"><div class="pop"><%= allitems[i] %></div</li>
+                <% } %> 
+            </ul> 
+            <form action="/" method="post">
+                <div class="row2">
+                <input  type="text" name="itemadded" autocomplete="off">
+                <button type="submit">ADD</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
